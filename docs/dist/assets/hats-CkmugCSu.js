@@ -1,16 +1,24 @@
-import{u as d,j as e}from"./index-Cs6_MLS9.js";const t={title:"Hats",description:"undefined"};function r(n){const a={a:"a",code:"code",div:"div",h1:"h1",h2:"h2",h3:"h3",h4:"h4",h5:"h5",h6:"h6",header:"header",li:"li",p:"p",ul:"ul",...d(),...n.components};return e.jsxs(e.Fragment,{children:[e.jsx(a.header,{children:e.jsxs(a.h1,{id:"hats",children:["Hats",e.jsx(a.a,{"aria-hidden":"true",tabIndex:"-1",href:"#hats",children:e.jsx(a.div,{"data-autolink-icon":!0})})]})}),`
+import{u as d,j as e}from"./index-vY_xwpc7.js";const s={title:"Hats",description:"undefined"};function r(n){const a={a:"a",code:"code",div:"div",h1:"h1",h2:"h2",h3:"h3",h4:"h4",h5:"h5",h6:"h6",header:"header",li:"li",p:"p",ul:"ul",...d(),...n.components};return e.jsxs(e.Fragment,{children:[e.jsx(a.header,{children:e.jsxs(a.h1,{id:"hats",children:["Hats",e.jsx(a.a,{"aria-hidden":"true",tabIndex:"-1",href:"#hats",children:e.jsx(a.div,{"data-autolink-icon":!0})})]})}),`
 `,e.jsxs(a.p,{children:["PublicHaus uses the ",e.jsx(a.a,{href:"https://www.hatsprotocol.xyz/",children:"Hats Protocol"})," for our organizational graph, roles, agents, and permissions."]}),`
 `,e.jsx(a.p,{children:e.jsx(a.a,{href:"https://app.hatsprotocol.xyz/trees/10/24?compact=true&hatId=24.3.2",children:"Hats Tree"})}),`
-`,e.jsxs(a.p,{children:["Top Hat corresponds to the ",e.jsx(a.a,{href:"https://app.safe.global/oeth:0xb1027c597e83009aadfc8e0b24db6ba31b1e3c6d/balances",children:"Hats Tree Controller"})," Safe attached to the DAO."]}),`
+`,e.jsxs(a.h2,{id:"top-hat",children:["Top Hat",e.jsx(a.a,{"aria-hidden":"true",tabIndex:"-1",href:"#top-hat",children:e.jsx(a.div,{"data-autolink-icon":!0})})]}),`
+`,e.jsxs(a.p,{children:["Corresponds to the ",e.jsx(a.a,{href:"https://app.safe.global/oeth:0xb1027c597e83009aadfc8e0b24db6ba31b1e3c6d/balances",children:"Hats Tree Controller"})," Safe attached to the DAO."]}),`
+`,e.jsxs(a.h3,{id:"hsg-owner",children:["HSG Owner",e.jsx(a.a,{"aria-hidden":"true",tabIndex:"-1",href:"#hsg-owner",children:e.jsx(a.div,{"data-autolink-icon":!0})})]}),`
+`,e.jsxs(a.ul,{children:[`
+`,e.jsx(a.li,{children:"Elected Reward Committee"}),`
+`,e.jsx(a.li,{children:"Contractooors"}),`
+`,e.jsx(a.li,{children:"Platformoooors"}),`
+`,e.jsx(a.li,{children:"Protocolooors"}),`
+`]}),`
+`,e.jsxs(a.h2,{id:"champion-admin",children:[e.jsx(a.a,{href:"https://app.hatsprotocol.xyz/trees/10/24?compact=true&hatId=24.1",children:"Champion Admin"}),e.jsx(a.a,{"aria-hidden":"true",tabIndex:"-1",href:"#champion-admin",children:e.jsx(a.div,{"data-autolink-icon":!0})})]}),`
+`,e.jsxs(a.h3,{id:"champions",children:[e.jsx(a.a,{href:"https://app.hatsprotocol.xyz/trees/10/24?compact=true&hatId=24.1.1",children:"Champions"}),e.jsx(a.a,{"aria-hidden":"true",tabIndex:"-1",href:"#champions",children:e.jsx(a.div,{"data-autolink-icon":!0})})]}),`
+`,e.jsxs(a.h3,{id:"champion-tree",children:[e.jsx(a.a,{href:"https://app.hatsprotocol.xyz/trees/10/24?compact=true&hatId=24.1.1.1",children:"Champion Tree"}),e.jsx(a.a,{"aria-hidden":"true",tabIndex:"-1",href:"#champion-tree",children:e.jsx(a.div,{"data-autolink-icon":!0})})]}),`
 `,e.jsxs(a.h2,{id:"groups",children:["Groups",e.jsx(a.a,{"aria-hidden":"true",tabIndex:"-1",href:"#groups",children:e.jsx(a.div,{"data-autolink-icon":!0})})]}),`
 `,e.jsxs(a.ul,{children:[`
 `,e.jsx(a.li,{children:e.jsx(a.a,{href:"#champion-admin",children:"Champion Admin"})}),`
 `,e.jsx(a.li,{children:e.jsx(a.a,{href:"#roles",children:"Roles"})}),`
 `,e.jsx(a.li,{children:e.jsx(a.a,{href:"#cross-chain-assets",children:"Cross Chain Assets"})}),`
 `]}),`
-`,e.jsxs(a.h3,{id:"champion-admin",children:[e.jsx(a.a,{href:"https://app.hatsprotocol.xyz/trees/10/24?compact=true&hatId=24.1",children:"Champion Admin"}),e.jsx(a.a,{"aria-hidden":"true",tabIndex:"-1",href:"#champion-admin",children:e.jsx(a.div,{"data-autolink-icon":!0})})]}),`
-`,e.jsxs(a.h4,{id:"champions",children:[e.jsx(a.a,{href:"https://app.hatsprotocol.xyz/trees/10/24?compact=true&hatId=24.1.1",children:"Champions"}),e.jsx(a.a,{"aria-hidden":"true",tabIndex:"-1",href:"#champions",children:e.jsx(a.div,{"data-autolink-icon":!0})})]}),`
-`,e.jsxs(a.h4,{id:"champion-tree",children:[e.jsx(a.a,{href:"https://app.hatsprotocol.xyz/trees/10/24?compact=true&hatId=24.1.1.1",children:"Champion Tree"}),e.jsx(a.a,{"aria-hidden":"true",tabIndex:"-1",href:"#champion-tree",children:e.jsx(a.div,{"data-autolink-icon":!0})})]}),`
 `,e.jsx(a.p,{children:"More ephemeral sub roles and daos that are more easily spun up and managed by champions."}),`
 `,e.jsxs(a.h3,{id:"roles",children:[e.jsx(a.a,{href:"https://app.hatsprotocol.xyz/trees/10/24?compact=true&hatId=24.2",children:"Roles"}),e.jsx(a.a,{"aria-hidden":"true",tabIndex:"-1",href:"#roles",children:e.jsx(a.div,{"data-autolink-icon":!0})})]}),`
 `,e.jsx(a.p,{children:"Roles directly under the DAO. Can only be changed through proposal and share holder (Champion) consensus."}),`
@@ -87,4 +95,4 @@ import{u as d,j as e}from"./index-Cs6_MLS9.js";const t={title:"Hats",description
 `,e.jsxs(a.li,{children:[e.jsx(a.code,{children:"factory"}),": ",e.jsx(a.code,{children:"0x22e0382194AC1e9929E023bBC2fD2BA6b778E098"})]}),`
 `,e.jsxs(a.li,{children:[e.jsx(a.code,{children:"vaultFactory"}),": ",e.jsx(a.code,{children:"0x2eF2fC8a18A914818169eFa183db480d31a90c5D"})]}),`
 `,e.jsxs(a.li,{children:[e.jsx(a.code,{children:"advTokenFactory"}),": ",e.jsx(a.code,{children:"0x97Aaa5be8B38795245f1c38A883B44cccdfB3E11"})]}),`
-`]})]})}function i(n={}){const{wrapper:a}={...d(),...n.components};return a?e.jsx(a,{...n,children:e.jsx(r,{...n})}):r(n)}export{i as default,t as frontmatter};
+`]})]})}function i(n={}){const{wrapper:a}={...d(),...n.components};return a?e.jsx(a,{...n,children:e.jsx(r,{...n})}):r(n)}export{i as default,s as frontmatter};
