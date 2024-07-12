@@ -12,8 +12,8 @@ export default defineConfig({
       link: '/safes',
     },
     {
-      text: 'Example',
-      link: '/example',
+      text: 'Hats',
+      link: '/hats',
     },
   ],
 });
