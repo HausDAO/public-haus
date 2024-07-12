@@ -8,6 +8,10 @@ export default defineConfig({
       link: '/barkeeps',
     },
     {
+      text: 'Safes',
+      link: '/safes',
+    },
+    {
       text: 'Example',
       link: '/example',
     },
