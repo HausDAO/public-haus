@@ -12,6 +12,7 @@
     "react": "latest",
     "react-dom": "latest",
     "typescript": "latest",
-    "vocs": "latest"
+    "vocs": "latest",
+    "wrangler": "^3.64.0"
   }
 }
