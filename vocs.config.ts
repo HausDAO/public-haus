@@ -1,15 +1,15 @@
-import { defineConfig } from 'vocs'
+import { defineConfig } from 'vocs';
 
 export default defineConfig({
-  title: 'Docs',
+  title: 'PublicHaus',
   sidebar: [
     {
-      text: 'Getting Started',
-      link: '/getting-started',
+      text: 'Barkeeps',
+      link: '/barkeeps',
     },
     {
       text: 'Example',
       link: '/example',
     },
   ],
-})
+});

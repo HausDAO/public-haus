@@ -2,15 +2,22 @@
 layout: landing
 ---
 
-import { HomePage } from 'vocs/components'
+import { HomePage } from 'vocs/components';
 
 <HomePage.Root>
   <HomePage.Logo />
-  <HomePage.Tagline>My Awesome Docs</HomePage.Tagline>
-  <HomePage.InstallPackage name="vocs" type="init" />
-  <HomePage.Description>This is a description of my documentation website.</HomePage.Description>
+  <HomePage.Tagline>What's your poison?</HomePage.Tagline>
+  <HomePage.Description>
+    A public house, commonly known as a pub, is an establishment licensed to
+    sell alcoholic drinks for consumption on the premises. Pubs are a
+    cornerstone of British culture and are also found in many other countries.
+    They typically serve a variety of alcoholic beverages, including beer, wine,
+    and spirits, and often provide a selection of non-alcoholic drinks as well.
+  </HomePage.Description>
+
   <HomePage.Buttons>
-    <HomePage.Button href="/getting-started" variant="accent">Get started</HomePage.Button>
-    <HomePage.Button href="https://github.com/wevm/vocs">GitHub</HomePage.Button>
+    <HomePage.Button href="/barkeeps" variant="accent">
+      Barkeeps
+    </HomePage.Button>
   </HomePage.Buttons>
 </HomePage.Root>
