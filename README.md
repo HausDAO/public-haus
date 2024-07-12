@@ -21,3 +21,12 @@ pnpm dev
 ```
 
 Local: [http://localhost:5173/](http://localhost:5173/)
+
+## Deploying
+
+```bash
+pnpm build
+```
+
+- Push to GitHub
+- Merge into `main`
