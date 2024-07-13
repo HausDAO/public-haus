@@ -15,5 +15,15 @@ export default defineConfig({
       text: 'Hats',
       link: '/hats',
     },
+    {
+      text: 'Procedures',
+      collapsed: false,
+      items: [
+        {
+          text: 'Make Payments From Superfluid',
+          link: '/procedures/superfluid',
+        },
+      ],
+    },
   ],
 });
