@@ -4,8 +4,8 @@ export default defineConfig({
   title: 'PublicHaus',
   sidebar: [
     {
-      text: 'Barkeeps',
-      link: '/barkeeps',
+      text: 'Pubkeepers',
+      link: '/pubkeepers',
     },
     {
       text: 'Safes',
@@ -22,6 +22,10 @@ export default defineConfig({
         {
           text: 'Make Payments From Superfluid',
           link: '/procedures/superfluid',
+        },
+        {
+          text: 'Track Social Media Engagement',
+          link: '/procedures/social',
         },
       ],
     },

@@ -1,0 +1,47 @@
+# Track Social Media Engagement
+
+At the moment the only social channels we engage in are on Twitter. We do not have a strategy other than letting the world know we are still alive.
+
+## Roles
+
+This role is managed by the [XComs](https://app.hatsprotocol.xyz/trees/10/24?compact=true&hatId=24.2.2) hat currently worn by `earth2travis.eth`
+
+## Tools
+
+We have a [DAOhaus Social Tracking](https://docs.google.com/spreadsheets/d/1JwCL7GugTYn0uMumQ49VD1Q5i8n1VGlbKpAqN_SXqZw/edit?gid=0#gid=0) Google sheet for tracking engagement and measuring our performance.
+
+## Procedure
+
+At the beginning of each month we need to update the spreadsheet with the data from the previous month.
+
+1. Open the [DAOhaus Social Tracking](https://docs.google.com/spreadsheets/d/1JwCL7GugTYn0uMumQ49VD1Q5i8n1VGlbKpAqN_SXqZw/edit?gid=0#gid=0) Google sheet
+2. Add a new heading for the previous month
+3. Scroll down to the beginning of the previous month in the [DAOhaus profile](https://x.com/DAOhaus)
+4. `command+click` each tweet to open it in a new tab
+5. Add the Type, Tweet, URL, Comments, Retweets, Likes, Bookmarks, and Views
+6. Repeat for each tweet that month
+7. Count the total number of T, RT, QT and add that below the months heading
+8. Add a formula to calculate the sum for each column
+9. Paste the data for that month into and the calculation script below into Chat GPT to identify the best performing tweet for that month
+10. Make the best performing tweet bold
+11. Ask Chat GPT to convert the table to Markdown and show you the code
+12. Paste the code into that month's GitHub issue related to Reporting Social Media Engagement under a Data heading ([Example](https://github.com/orgs/HausDAO/projects/28/views/2?pane=issue&itemId=71607772))
+13. Add bullets for the total amount of Tweets, Retweets, and Quote tweets
+14. Embed the best performing tweet
+15. Share the data and best performing Tweet in the [`💥-news-flash`](https://discord.com/channels/709210493549674598/758440646553370635) channel on Discord
+16. Close the GitHub issue
+
+## Calculations
+
+```python
+# Create a DataFrame
+df = pd.DataFrame(data)
+
+# Define a performance metric
+df["Performance"] = df["Comments"] + df["Retweets"] + df["Likes"] + df["Bookmarks"] + df["Views"]
+
+# Find the tweet with the highest performance
+best_performance_tweet = df.loc[df["Performance"].idxmax()]
+
+best_performance_tweet
+```
