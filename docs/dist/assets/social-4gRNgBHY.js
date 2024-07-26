@@ -1,4 +1,4 @@
-import{u as a,j as e}from"./index-BKxNqGFv.js";const t={title:"Track Social Media Engagement",description:"undefined"};function i(n){const s={a:"a",code:"code",div:"div",h1:"h1",h2:"h2",header:"header",li:"li",ol:"ol",p:"p",pre:"pre",span:"span",...a(),...n.components};return e.jsxs(e.Fragment,{children:[e.jsx(s.header,{children:e.jsxs(s.h1,{id:"track-social-media-engagement",children:["Track Social Media Engagement",e.jsx(s.a,{"aria-hidden":"true",tabIndex:"-1",href:"#track-social-media-engagement",children:e.jsx(s.div,{"data-autolink-icon":!0})})]})}),`
+import{u as a,j as e}from"./index-BVQMN_sk.js";const t={title:"Track Social Media Engagement",description:"undefined"};function i(n){const s={a:"a",code:"code",div:"div",h1:"h1",h2:"h2",header:"header",li:"li",ol:"ol",p:"p",pre:"pre",span:"span",...a(),...n.components};return e.jsxs(e.Fragment,{children:[e.jsx(s.header,{children:e.jsxs(s.h1,{id:"track-social-media-engagement",children:["Track Social Media Engagement",e.jsx(s.a,{"aria-hidden":"true",tabIndex:"-1",href:"#track-social-media-engagement",children:e.jsx(s.div,{"data-autolink-icon":!0})})]})}),`
 `,e.jsx(s.p,{children:"At the moment the only social channels we engage in are on Twitter. We do not have a strategy other than letting the world know we are still alive."}),`
 `,e.jsxs(s.h2,{id:"roles",children:["Roles",e.jsx(s.a,{"aria-hidden":"true",tabIndex:"-1",href:"#roles",children:e.jsx(s.div,{"data-autolink-icon":!0})})]}),`
 `,e.jsxs(s.p,{children:["This role is managed by the ",e.jsx(s.a,{href:"https://app.hatsprotocol.xyz/trees/10/24?compact=true&hatId=24.2.2",children:"XComs"})," hat currently worn by ",e.jsx(s.code,{children:"earth2travis.eth"})]}),`
@@ -22,6 +22,7 @@ import{u as a,j as e}from"./index-BKxNqGFv.js";const t={title:"Track Social Medi
 `,e.jsx(s.li,{children:"Add bullets for the total amount of Tweets, Retweets, and Quote tweets"}),`
 `,e.jsx(s.li,{children:"Embed the best performing tweet"}),`
 `,e.jsxs(s.li,{children:["Share the data and best performing Tweet in the ",e.jsx(s.a,{href:"https://discord.com/channels/709210493549674598/758440646553370635",children:e.jsx(s.code,{children:"💥-news-flash"})})," channel on Discord"]}),`
+`,e.jsxs(s.li,{children:["Add ",e.jsx(s.code,{children:"social"})," tag to GitHub issue"]}),`
 `,e.jsx(s.li,{children:"Close the GitHub issue"}),`
 `]}),`
 `,e.jsxs(s.h2,{id:"calculations",children:["Calculations",e.jsx(s.a,{"aria-hidden":"true",tabIndex:"-1",href:"#calculations",children:e.jsx(s.div,{"data-autolink-icon":!0})})]}),`
