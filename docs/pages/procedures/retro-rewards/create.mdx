@@ -1,0 +1,138 @@
+# Create Retro Signal Session
+
+Retro Signal Sessions reward contributors for work completed in a season that supports the DAOs priorities from the Objective Signal Session.
+
+The Retro Signal Session is a two week event that happens at the end of each quarter.
+
+The proposal to Create a Signal TCR should be submitted 14 days before the end of the month. The end date of the proposal should be set for the last day of the month. It is helpful to add an event on the calendar to provide a reminder to start this process.
+
+- **Voting Period**: 4 days
+- **Grace Period**: 3 days
+- **Retro Signal Session**: 7 days
+
+## Setup
+
+### Verify Staking is Paused
+
+Staking in the DAO should be paused prior to starting the Retro Signal Session.
+
+To verify staking is paused goto [Stake HAUS](https://join.daohaus.fun/#/join) and confirm the following banner is displayed:
+
+![Staking Paused Banner](/images/staking-paused.png)
+
+You can also verify staking is paused in the [`targetDAO.tsx`](https://github.com/HausDAO/publichaus/blob/main/src/targetDAO.tsx#L30) file on GitHub.
+
+![Target DAO](/images/target-dao.png)
+
+### Pause Staking
+
+If staking is not currently paused you need to take the following steps to pause staking prior to starting the Retro Signal Session:
+
+1. Goto [`targetDAO.tsx`](https://github.com/HausDAO/publichaus/blob/main/src/targetDAO.tsx#L30) on GitHub.
+2. Click pencil icon to "Edit this file"
+3. Change:
+
+```tsx
+STAKE_PAUSED: false,
+```
+
+to:
+
+```tsx
+STAKE_PAUSED: true,
+```
+
+### Resume Staking
+
+1. Use [dEth Tools](https://tools.deth.net/unix-epoch-utc-conversion) to get the date on the first of next month when staking should resume.
+
+![Convert UTC to UNIX Epoch](/images/convert-utc-to-unix-epoch.png)
+
+2. Copy the Unix epoch (in miliseconds):
+3. Edit the Unix epoch
+   - Since the epoch is in miliseconds you will need to remove 3 zeros from the end
+   - Change: `1088640000000`
+   - To: `1088640000`
+4. Paste your updated Unix epoch in dEth Tools to verify it is correct:
+
+![Convert UNIX Epoch to UTC](/images/convert-unix-epoch-to-utc.png)
+
+5. Go back to the [`targetDAO.tsx`](https://github.com/HausDAO/publichaus/blob/main/src/targetDAO.tsx#L31) file you are editing on GitHub.
+6. Change:
+
+```tsx
+STAKE_NEXT_START: 1711976936; // last end 1704222000, //
+```
+
+to:
+
+```tsx
+STAKE_NEXT_START: 1088640000; // last end 1711976936, //
+```
+
+(notice you take the previous Epoch time and replace last end comment and paste the new time as `STAKE_NEXT_START`)
+
+6. Click commit changes
+7. Add Extended description: "Pause staking and update date for resuming"
+8. Select "Create a new branch for this commit and start a pull request"
+9. Name branch: `earth2travis-retro5` (your GitHub username dash current retro number)
+
+![Propose Changes](/images/propose-changes.png)
+
+10. Open a pull request
+11. Create pull request
+12. Merge pull request
+13. Delete branch
+
+`*` Need to verify how these changes are deployed and if there are additional steps required
+
+Once the changes have been deployed verify the staking is paused banner appears on [Stake Haus](https://join.daohaus.fun/#/join)
+
+`<INSERT SCREENSHOT>`
+
+### Staking Shaman
+
+Staking shaman contract: https://github.com/HausDAO/publichaus/blob/main/src/targetDAO.tsx#L29C20-L29C62
+
+(Add Instructions)
+
+### Create Forum Post on Discord
+
+1. Goto [📜-public-forum](https://discord.com/channels/709210493549674598/1062791450183610410) channel on Discord.
+2. Click New Post
+
+**Title**: Shipped in Season `#`
+
+**Message**: As we gear up for Season `#` Demo Day, we want to hear from you! Share links to your projects and let's discuss the the work we shipped. Tell us what you're proud of, what challenges you faced, and what didn't go as planned. This is a chance to support and learn from each other, gain insights to inspire future collaborations, and help us avoid common pitfalls.
+
+**Tags**: `retro`
+
+Once the post has been created copy the link to it to use in the next step.
+
+Add image:
+
+![Shipped](/images/shipped.png)
+
+Add link to Season `#` Demo Day [event in Discord](/procedures/demo-day/schedule#create-discord-event)
+
+Add messages:
+
+`Signal your appreciation to the builders that keep the HAUS standing. Projectooooors, Bizdevooooooors, Maintainooooors, Operatoooooors, Proposalooooooors, and Champions. Share things you and others have done towards the seasonal and yearly roadmap objectives. Onchain vote starts next week`
+
+`@PublicHaus WTF did you ship in Season #?`
+
+### Create Signal
+
+1. Goto [PublicHAUS (HQ) Signals](https://signal.daohaus.fun/#/0xa/0xf5d6b637a9185707f52d40d452956ca49018247a)
+2. Click [Create Signal](https://signal.daohaus.fun/#/0xa/0xf5d6b637a9185707f52d40d452956ca49018247a/create) (at bottom of view)
+
+- **Signal Title**: Public HAUS Retro #5
+  (update retro number to current season)
+- **Signal Description**: Signal your appreciation to the builders that keep the HAUS standing. Projectooooors, Bizdevooooooors, Maintainooooors, Operatoooooors, Proposalooooooors, and Champions
+- **End Date**: Last day of month at 11:30 PM
+- **Link**: Link to Discord Forum post created above
+- **Tags**: `retro`, `season 5`
+  (update season number to current season)
+
+3. Click Submit
+4. Vote on Proposal

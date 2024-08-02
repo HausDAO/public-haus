@@ -53,6 +53,32 @@ export default defineConfig({
             },
           ],
         },
+        {
+          text: 'Retro Rewards',
+          collapsed: true,
+          items: [
+            {
+              text: 'Create',
+              link: '/procedures/retro-rewards/create',
+            },
+            {
+              text: 'Execute',
+              link: '/procedures/retro-rewards/execute',
+            },
+            {
+              text: 'Add Choices',
+              link: '/procedures/retro-rewards/add-choices',
+            },
+            {
+              text: 'Share',
+              link: '/procedures/retro-rewards/share',
+            },
+            {
+              text: 'Distribute',
+              link: '/procedures/retro-rewards/distribute',
+            },
+          ],
+        },
       ],
     },
   ],
