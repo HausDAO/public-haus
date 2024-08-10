@@ -1,1 +1,268 @@
 # Distribute Retro Rewards
+
+After the Retro Rewards Signal Session ends it is time to calculate the results and distribute the rewards.
+
+Each team that contributed will have an equal amount of their share distributed amongst team members. The execution of the contract below adds $HAUS to the treasury and distributes `nvPUB` to contributors from the Season providing increased stake in the PublicHaus DAO.
+
+It is important that these funds are distributed prior to executing the TCR related the next season's objectives so voting weights reflect the rewards.
+
+## Calculate Results
+
+Open the [DAOhaus Retro Rewards 2024](https://docs.google.com/spreadsheets/d/1H3LddNt9qqzbfUJf2My6N79QCz440l653lFPcswULbA/edit?usp=sharing) Google Sheet. If you do not have access please request it from Ξ2T.
+
+Duplicate the `Season #` and `Season # Splits` tabs and rename them according to the current season.
+
+You will need to populate the data in the spreadsheet from the corresponding TCR. For Example, [Public HAUS Retro #5 Take 2](https://signal.daohaus.fun/#/0xa/0xf5d6b637a9185707f52d40d452956ca49018247a/tcr/0x204c5653279e502c507b6938d14f4e4878742c91)
+
+1. Copy the name of **Projects** into Column A
+
+![image](https://hackmd.io/_uploads/H1xJH00tR.png)
+
+2. For each project, copy the **Total Staked** number in white and paste it into the spreadsheet.
+3. For each project, copy the **Quadratic Votes** number in red and paste it into the spreadsheet.
+4. Calculate the totals for both **Total Staked** and **Quadratic Votes**
+
+![image](https://hackmd.io/_uploads/r1aJPC0tR.png)
+
+5. For the **Total nvPUB** paste the total from the DAO Tokens section of the [DAO Settings](https://admin.daohaus.club/#/molochv3/0xa/0xf5d6b637a9185707f52d40d452956ca49018247a/settings) page.
+6. **Participation %** is calculated by dividing **Total Staked** by **Total nvPUB**.
+7. **Distribution** is calculated by multiplying **Participation %** by 4000 (amount of $HAUS rewarded for the season).
+8. Calculate **Quadratic %** by dividing each project's **Quadratic Votes** by the **Total Quadratic Votes** and multiplying by 100.
+
+Make sure to use the $ signs in the denominator to lock that cell into the formula.
+
+**For Example**: `=(C2/$C$7)*100`
+
+9. Add the **Description** of each project from the Retro Rewards TCR.
+10. Calculate **Total Rewards** for each project by multiplying the **Distribution** times the **Quadratic %** divided by 100.
+
+Make sure to use the $ signs to lock that cell into the formuala.
+
+**For Example**: `=($B$10*(D2/100))`
+
+### Season Splits
+
+Copy the **Projects** and **Total Rewards** into the Splits tab associated with the current season.
+
+Make sure the formulas refer to tab you have been updating.
+
+**For Example**: `=('Season 5'!$B$10*('Season 5'!D2/100))`
+
+Verify the data is the same.
+
+### Add Accounts
+
+Next you need to add the wallet address of each project participant. These will be the addresses on Optimism that `nvPUB` rewards are sent to.
+
+Below each project add a row for each project team member. Add their name and wallet address from the PublicHaus [Members](https://admin.daohaus.club/#/molochv3/0xa/0xf5d6b637a9185707f52d40d452956ca49018247a/members) page.
+
+### Share Results
+
+In the "Shipped in Season #" Discord thread associated with the season and on Twitter post messages similar to this:
+
+> The results from Public HAUS Retro 5 Take 2 are in!
+> https://signal.daohaus.fun/
+
+![image](https://hackmd.io/_uploads/Bk10e119C.png)
+
+> There was a total of 200,907.94 nvPUB staked in this retro reward round for a participation rate of 30%
+
+> There will be 1196.654681 `nvPUB` distributed between the following projects:
+
+```md
+| Projects         | Rewards     |
+| ---------------- | ----------- |
+| Speedball        | 355.5938245 |
+| YEET From Frames | 309.359768  |
+| Cookie Jar       | 194.1301766 |
+| NFT Raider       | 169.505995  |
+| DIN              | 168.0649171 |
+```
+
+Use Chat GPT to create the Markdown tables from the Google Sheet.
+
+### Gather Missing Accounts
+
+For each project post the **Team** and **Address** Markdown table in the "Shipped in Season #" thread similar to the table below.
+
+> Please reply to the messages below to confirm the wallet addresses of the project team members:
+
+```md
+| Name     | Address                                    |
+| -------- | ------------------------------------------ |
+| Dekan    | 0xbaf6e57a3940898fd21076b139d4ab231dcbbc5f |
+| Sam      | 0x83ab8e31df35aa3281d630529c6f4bf5ac7f7abf |
+| Abhi     |                                            |
+| Ξ2T      | 0xbc5b552641e5d203f0a6c230aa9dc14da7450053 |
+| Santiago |                                            |
+```
+
+`@` mention to confirm the know addresses are correct and to get the wallet of those missing.
+
+> Hopefully we can have all the blanks filled out before the next Community Camp
+> https://discord.gg/vdb9Hd8w?event=1263587854991491165`
+
+### Calculate Rewards
+
+Fill out the **Rewards** column by dividing the **Total Rewards** for each project by the number of team members.
+
+Make sure to use the $ signs to lock that cell into the formula.
+
+**For Example**: `=$B$2/5`
+
+### Add Rewards
+
+Some team members will have contributed to multiple projects. Copy and paste the **Team Column** and ask Chat GPT to "Count how many instances of each name there are:"
+
+That table can be copied and pasted into the bottom of the Splits tab.
+
+For members who have contributed to multiple teams add additional rows under their name.
+
+Fill out the **Project Name** for all contributors. Add their **Address** once and link to the **Rewards** for each project.
+
+Make sure the total for this **Rewards** column matches the **Total Rewards** above.
+
+For contributors on multiple projects create a formula to add their **Total** rewards.
+
+**For Example**: `=sum(E23:E25)`
+
+For contributors to one project just refer to the cell next to it.
+
+Make sure the total for this **Total** column matches the **Rewards** column.
+
+### Sum Rewards
+
+Make a copy of the the rewards table you just filled out and paste it at the bottom of the sheet.
+
+Remove the **Projects** and **Count** information. Remove any empty rows below a members name. Remove the **Rewards** heading and data.
+
+In the **Totals** column link each cell to the total for that member from the **Totals** above. For members who only contributed to one project link that cell to the **Rewards** from above.
+
+### Convert to WEI
+
+Next the **Totals** need to be converted into WEI. dEth Tools [Eth Unit Conversion](https://tools.deth.net/eth-unit-conversion) is a good way to do this manually but the formula is: `=F46*1000000000000000000` (1 with 18 zeros)
+
+### Create Arrays
+
+The problem with using the formula is the commas have to be removed between the digits. You can do that with the Chat-GPT prompt below.
+
+Copy and paste the **Address** data into Chat-GPT with the following prompt:
+
+```bash
+Create a JavaScript array with these addresses:
+
+{addresses}
+
+The array should only be the brackets. It does not need a name or equals sign. It is also not necessary to include the semicolon.
+```
+
+Paste the results into the spreadsheet under **`\_accounts (address[])`**
+
+Copy and paste the **WEI** data into Chat-GPT with the following prompt:
+
+```bash
+Create a JavaScript array with these amounts:
+
+{amounts}
+
+The array should only be the brackets. It does not need a name or equals sign. Please remove the commas between the digits. It is also not necessary to include the semicolon.
+```
+
+Paste the results into the spreadsheet under **`_claims (uint256[])`**
+
+### A Second Look
+
+Now that the spreadsheet is complete please send it to another DAO member to verify it is correct. Ask them to review the data and approve it.
+
+## Transaction
+
+The `StakeClaimShaman` contract on Optimism is at the following address: `0x22F09C11De8f059840FD8F60b11b8d60DeA0E011`
+
+Goto the [Contract](https://optimistic.etherscan.io/address/0x22F09C11De8f059840FD8F60b11b8d60DeA0E011) on Optimistic Etherscan.
+
+Drop down `Token Holdings` and make sure there is enough $HAUS to cover the **Total Rewards**.
+
+### Create Batch
+
+Next we need to create the contract transaction from the Gnosis Safe App.
+
+The transaction will have to be signed by the [Elected Reward Committee](https://app.hatsprotocol.xyz/trees/10/24?compact=true&hatId=24.2.3)
+
+Goto the Elected Reward Committee [Gnosis Safe](https://app.safe.global/home?safe=oeth:0x02Cd00B0Aec913c30577e4FCE3179aEd91D6C315) on Optimism.
+
+- Click `New Transaction`
+- Click `Transaction Builder`
+- Enter Address: `0x22F09C11De8f059840FD8F60b11b8d60DeA0E011`
+- Enter ABI:
+
+```solidity
+[{"anonymous":false,"inputs":[{"indexed":false,"internalType":"address","name":"account","type":"address"},{"indexed":false,"internalType":"uint256","name":"amount","type":"uint256"}],"name":"Claim","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"address","name":"account","type":"address"},{"indexed":false,"internalType":"uint256","name":"amount","type":"uint256"}],"name":"DaoWithdraw","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"uint8","name":"version","type":"uint8"}],"name":"Initialized","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"address[]","name":"accounts","type":"address[]"},{"indexed":false,"internalType":"uint256[]","name":"amounts","type":"uint256[]"}],"name":"SetClaims","type":"event"},{"inputs":[],"name":"baal","outputs":[{"internalType":"contract IBaal","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_to","type":"address"}],"name":"claim","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_account","type":"address"}],"name":"claimOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"claims","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_moloch","type":"address"},{"internalType":"address","name":"_stakeToken","type":"address"},{"internalType":"bool","name":"_isShares","type":"bool"},{"internalType":"uint256","name":"_multiplier","type":"uint256"}],"name":"init","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"isShares","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"multiplier","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"renounceOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"stakeToken","outputs":[{"internalType":"contract IERC20","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address[]","name":"_accounts","type":"address[]"},{"internalType":"uint256[]","name":"_claims","type":"uint256[]"}],"name":"updateClaims","outputs":[],"stateMutability":"nonpayable","type":"function"}]
+```
+
+You can also copy the Contract ABI from the bottom of the [Contract Code](https://optimistic.etherscan.io/address/0x22F09C11De8f059840FD8F60b11b8d60DeA0E011#code) on the Optimism block explorer.
+
+Click the drop-down for the Contract Method Selector and choose `updateClaims`
+
+![image](https://hackmd.io/_uploads/SJiCkEx5A.png)
+
+Paste the arrays you added to the spreadsheet in the previous section and make sure there are no errors.
+
+- Click `Add transaction`
+- Click `Create Batch`
+- Sign transaction
+
+Post a link to the transaction in the Gnosis Safe to the `Shipped in Season #` Discord thread and at mention the other signers requesting their signature.
+
+Add a checkbox emoji to the post for signers to add to show they have added their signatures.
+
+After the signers have signed and the transaction and has been executed post a link to the transaction on the Optimism blockexplorer in the `Shipped in Season #` Discord thread
+
+## Notify Community
+
+Next you need to post a link to [Claims](https://join.daohaus.fun/#/claim) in the `Shipped in Season #` Discord thread.
+
+> Retro Rewards have been distributed fro Season `#`: https://optimistic.etherscan.io
+
+> Go to the Claims page to get your nvPUB.
+> https://join.daohaus.fun/#/claim
+
+In the Tavern:
+
+> @PublicHaus Season `#` Retro Rewards have been distributed:
+
+> https://optimistic.etherscan.io/
+
+> We had some kick ass projects last season:
+
+```md
+| Projects  | Rewards     |
+| --------- | ----------- |
+| Project 1 | 000.0000000 |
+| Project 2 | 000.0000000 |
+| Project 3 | 000.0000000 |
+```
+
+> And appreciate the contributions of:
+
+- Contributor 1
+- Contributor 2
+- Contributor 3
+- ...
+
+> Visit the Claims page to get your nvPUB. https://join.daohaus.fun/#/claim
+
+> We are launching the season `#` Objectives `when` so claim today to increase your voting weight!
+
+Add another post in the Tavern:
+
+> Retro rewards for Season `#` have been distributed.
+
+> Link to transaction
+
+> Shout out to (`@` mention all team members who got rewards) and say thanks for contributing.
+
+> Goto the Claims page to increase your stake in the upcoming Objectives Signal Session.
+
+> https://join.daohaus.fun/#/claims
+
+Similar posts should also be added to Twitter and Warpcast
