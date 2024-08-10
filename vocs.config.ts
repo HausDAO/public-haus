@@ -83,6 +83,32 @@ export default defineConfig({
             },
           ],
         },
+        {
+          text: 'Seasonal Objectives',
+          collapsed: true,
+          items: [
+            {
+              text: 'Create',
+              link: '/procedures/seasonal-objectives/create',
+            },
+            {
+              text: 'Discuss',
+              link: '/procedures/seasonal-objectives/discuss',
+            },
+            {
+              text: 'Execute',
+              link: '/procedures/seasonal-objectives/execute',
+            },
+            {
+              text: 'Add Choices',
+              link: '/procedures/seasonal-objectives/add-choices',
+            },
+            {
+              text: 'Share',
+              link: '/procedures/seasonal-objectives/share',
+            },
+          ],
+        },
       ],
     },
   ],
