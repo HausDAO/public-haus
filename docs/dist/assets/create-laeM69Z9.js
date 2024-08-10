@@ -1,4 +1,4 @@
-import{u as r,j as e}from"./index-CoXRYihk.js";const a={title:"Create Retro Signal Session",description:"undefined"};function i(n){const s={a:"a",code:"code",div:"div",h1:"h1",h2:"h2",h3:"h3",header:"header",img:"img",li:"li",ol:"ol",p:"p",pre:"pre",span:"span",strong:"strong",ul:"ul",...r(),...n.components};return e.jsxs(e.Fragment,{children:[e.jsx(s.header,{children:e.jsxs(s.h1,{id:"create-retro-signal-session",children:["Create Retro Signal Session",e.jsx(s.a,{"aria-hidden":"true",tabIndex:"-1",href:"#create-retro-signal-session",children:e.jsx(s.div,{"data-autolink-icon":!0})})]})}),`
+import{u as r,j as e}from"./index-CtO8diTK.js";const a={title:"Create Retro Signal Session",description:"undefined"};function i(n){const s={a:"a",blockquote:"blockquote",code:"code",div:"div",h1:"h1",h2:"h2",h3:"h3",header:"header",img:"img",li:"li",ol:"ol",p:"p",pre:"pre",span:"span",strong:"strong",ul:"ul",...r(),...n.components};return e.jsxs(e.Fragment,{children:[e.jsx(s.header,{children:e.jsxs(s.h1,{id:"create-retro-signal-session",children:["Create Retro Signal Session",e.jsx(s.a,{"aria-hidden":"true",tabIndex:"-1",href:"#create-retro-signal-session",children:e.jsx(s.div,{"data-autolink-icon":!0})})]})}),`
 `,e.jsx(s.p,{children:"Retro Signal Sessions reward contributors for work completed in a season that supports the DAOs priorities from the Objective Signal Session."}),`
 `,e.jsx(s.p,{children:"The Retro Signal Session is a two week event that happens at the end of each quarter."}),`
 `,e.jsx(s.p,{children:"The proposal to Create a Signal TCR should be submitted 14 days before the end of the month. The end date of the proposal should be set for the last day of the month. It is helpful to add an event on the calendar to provide a reminder to start this process."}),`
@@ -81,8 +81,12 @@ import{u as r,j as e}from"./index-CoXRYihk.js";const a={title:"Create Retro Sign
 `,e.jsx(s.p,{children:e.jsx(s.img,{src:"/images/shipped.png",alt:"Shipped"})}),`
 `,e.jsxs(s.p,{children:["Add link to Season ",e.jsx(s.code,{children:"#"})," Demo Day ",e.jsx(s.a,{href:"/procedures/demo-day/schedule#create-discord-event",children:"event in Discord"})]}),`
 `,e.jsx(s.p,{children:"Add messages:"}),`
-`,e.jsx(s.p,{children:e.jsx(s.code,{children:"Signal your appreciation to the builders that keep the HAUS standing. Projectooooors, Bizdevooooooors, Maintainooooors, Operatoooooors, Proposalooooooors, and Champions. Share things you and others have done towards the seasonal and yearly roadmap objectives. Onchain vote starts next week"})}),`
-`,e.jsx(s.p,{children:e.jsx(s.code,{children:"@PublicHaus WTF did you ship in Season #?"})}),`
+`,e.jsxs(s.blockquote,{children:[`
+`,e.jsx(s.p,{children:"Signal your appreciation to the builders that keep the HAUS standing. Projectooooors, Bizdevooooooors, Maintainooooors, Operatoooooors, Proposalooooooors, and Champions. Share things you and others have done towards the seasonal and yearly roadmap objectives. Onchain vote starts next week"}),`
+`]}),`
+`,e.jsxs(s.blockquote,{children:[`
+`,e.jsx(s.p,{children:"@PublicHaus WTF did you ship in Season #?"}),`
+`]}),`
 `,e.jsxs(s.h3,{id:"create-signal",children:["Create Signal",e.jsx(s.a,{"aria-hidden":"true",tabIndex:"-1",href:"#create-signal",children:e.jsx(s.div,{"data-autolink-icon":!0})})]}),`
 `,e.jsxs(s.ol,{children:[`
 `,e.jsxs(s.li,{children:["Goto ",e.jsx(s.a,{href:"https://signal.daohaus.fun/#/0xa/0xf5d6b637a9185707f52d40d452956ca49018247a",children:"PublicHAUS (HQ) Signals"})]}),`

@@ -1,4 +1,4 @@
-import{u as l,j as s}from"./index-CoXRYihk.js";const a={title:"Distribute Retro Rewards",description:"undefined"};function e(r){const i={a:"a",blockquote:"blockquote",code:"code",div:"div",h1:"h1",h2:"h2",h3:"h3",header:"header",img:"img",li:"li",ol:"ol",p:"p",pre:"pre",span:"span",strong:"strong",ul:"ul",...l(),...r.components};return s.jsxs(s.Fragment,{children:[s.jsx(i.header,{children:s.jsxs(i.h1,{id:"distribute-retro-rewards",children:["Distribute Retro Rewards",s.jsx(i.a,{"aria-hidden":"true",tabIndex:"-1",href:"#distribute-retro-rewards",children:s.jsx(i.div,{"data-autolink-icon":!0})})]})}),`
+import{u as l,j as s}from"./index-CtO8diTK.js";const a={title:"Distribute Retro Rewards",description:"undefined"};function e(r){const i={a:"a",blockquote:"blockquote",code:"code",div:"div",h1:"h1",h2:"h2",h3:"h3",header:"header",img:"img",li:"li",ol:"ol",p:"p",pre:"pre",span:"span",strong:"strong",ul:"ul",...l(),...r.components};return s.jsxs(s.Fragment,{children:[s.jsx(i.header,{children:s.jsxs(i.h1,{id:"distribute-retro-rewards",children:["Distribute Retro Rewards",s.jsx(i.a,{"aria-hidden":"true",tabIndex:"-1",href:"#distribute-retro-rewards",children:s.jsx(i.div,{"data-autolink-icon":!0})})]})}),`
 `,s.jsx(i.p,{children:"After the Retro Rewards Signal Session ends it is time to calculate the results and distribute the rewards."}),`
 `,s.jsxs(i.p,{children:["Each team that contributed will have an equal amount of their share distributed amongst team members. The execution of the contract below adds $HAUS to the treasury and distributes ",s.jsx(i.code,{children:"nvPUB"})," to contributors from the Season providing increased stake in the PublicHaus DAO."]}),`
 `,s.jsx(i.p,{children:"It is important that these funds are distributed prior to executing the TCR related the next season's objectives so voting weights reflect the rewards."}),`
@@ -9,13 +9,13 @@ import{u as l,j as s}from"./index-CoXRYihk.js";const a={title:"Distribute Retro 
 `,s.jsxs(i.ol,{children:[`
 `,s.jsxs(i.li,{children:["Copy the name of ",s.jsx(i.strong,{children:"Projects"})," into Column A"]}),`
 `]}),`
-`,s.jsx(i.p,{children:s.jsx(i.img,{src:"https://hackmd.io/_uploads/H1xJH00tR.png",alt:"image"})}),`
+`,s.jsx(i.p,{children:s.jsx(i.img,{src:"/images/total-staked.png",alt:"Total Staked"})}),`
 `,s.jsxs(i.ol,{start:"2",children:[`
 `,s.jsxs(i.li,{children:["For each project, copy the ",s.jsx(i.strong,{children:"Total Staked"})," number in white and paste it into the spreadsheet."]}),`
 `,s.jsxs(i.li,{children:["For each project, copy the ",s.jsx(i.strong,{children:"Quadratic Votes"})," number in red and paste it into the spreadsheet."]}),`
 `,s.jsxs(i.li,{children:["Calculate the totals for both ",s.jsx(i.strong,{children:"Total Staked"})," and ",s.jsx(i.strong,{children:"Quadratic Votes"})]}),`
 `]}),`
-`,s.jsx(i.p,{children:s.jsx(i.img,{src:"https://hackmd.io/_uploads/r1aJPC0tR.png",alt:"image"})}),`
+`,s.jsx(i.p,{children:s.jsx(i.img,{src:"/images/total-tokens.png",alt:"Total"})}),`
 `,s.jsxs(i.ol,{start:"5",children:[`
 `,s.jsxs(i.li,{children:["For the ",s.jsx(i.strong,{children:"Total nvPUB"})," paste the total from the DAO Tokens section of the ",s.jsx(i.a,{href:"https://admin.daohaus.club/#/molochv3/0xa/0xf5d6b637a9185707f52d40d452956ca49018247a/settings",children:"DAO Settings"})," page."]}),`
 `,s.jsxs(i.li,{children:[s.jsx(i.strong,{children:"Participation %"})," is calculated by dividing ",s.jsx(i.strong,{children:"Total Staked"})," by ",s.jsx(i.strong,{children:"Total nvPUB"}),"."]}),`
@@ -44,7 +44,7 @@ import{u as l,j as s}from"./index-CoXRYihk.js";const a={title:"Distribute Retro 
 `,s.jsxs(i.p,{children:[`The results from Public HAUS Retro 5 Take 2 are in!
 `,s.jsx(i.a,{href:"https://signal.daohaus.fun/",children:"https://signal.daohaus.fun/"})]}),`
 `]}),`
-`,s.jsx(i.p,{children:s.jsx(i.img,{src:"https://hackmd.io/_uploads/Bk10e119C.png",alt:"image"})}),`
+`,s.jsx(i.p,{children:s.jsx(i.img,{src:"/images/familiy-feud.png",alt:"Family Feud"})}),`
 `,s.jsxs(i.blockquote,{children:[`
 `,s.jsx(i.p,{children:"There was a total of 200,907.94 nvPUB staked in this retro reward round for a participation rate of 30%"}),`
 `]}),`
