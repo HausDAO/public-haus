@@ -62,6 +62,10 @@ export default defineConfig({
               link: '/procedures/retro-rewards/create',
             },
             {
+              text: 'Transfer',
+              link: '/procedures/retro-rewards/transfer',
+            },
+            {
               text: 'Execute',
               link: '/procedures/retro-rewards/execute',
             },

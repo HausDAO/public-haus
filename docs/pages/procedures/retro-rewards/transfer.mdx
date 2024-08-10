@@ -1,0 +1,41 @@
+# Transfer Retro Rewards
+
+Next we need to ensure there is adequate $HAUS for the retro rewards. Currently 4000 $HAUS (~3% of total uncirculating supply) is converted in order to distribute `nvPUB` to contributors for each season.
+
+We need to transfer that $HAUS from the [Gnosis Safe](https://app.safe.global/home?safe=oeth:0x02cd00b0aec913c30577e4fce3179aed91d6c315) on Optimism into the [`StakeClaimShaman`](https://optimistic.etherscan.io/address/0x22F09C11De8f059840FD8F60b11b8d60DeA0E011#code) contract.
+
+The [Elected Reward Committee](https://app.hatsprotocol.xyz/trees/10/24?compact=true&hatId=24.3.2) is managed under Roles with Hats Protocol:
+
+![Elected Reward Committee](/images/elected-reward-committee.png)
+
+## Check Balance
+
+Check the $HAUS balance of the [`StakeClaimShaman'](https://optimistic.etherscan.io/address/0x22F09C11De8f059840FD8F60b11b8d60DeA0E011#code) contract on the Optimism block explorer by clicking the drop-down below the Token Holdings label.
+
+## Transfer $HAUS
+
+Create proposal to transfer 4000 HAUS (~3% of total uncirculating supply) to the Rewards Committee [Safe](https://app.safe.global/home?safe=oeth:0x02Cd00B0Aec913c30577e4FCE3179aEd91D6C315).
+
+These tokens will be transfered to the [`StakeClaimShaman`](https://optimistic.etherscan.io/address/0x22F09C11De8f059840FD8F60b11b8d60DeA0E011#code) contract by the Rewards COmmittee after the Retro Results.
+
+**Example Proposal**: [Transfer Season 5 Retro Rewards for Distribution](https://admin.daohaus.club/#/molochV3/0xa/0xf5d6b637a9185707f52d40d452956ca49018247a/proposal/79)
+
+1. Goto [Safes Page](https://admin.daohaus.club/#/molochv3/0xa/0xf5d6b637a9185707f52d40d452956ca49018247a/safes)
+2. Click the `...` menu for the ECO Fund safe
+3. Select Transfer ERC-20
+
+- **Title**: Transfer Season `#` Retro Rewards for Distribution
+- **Description**: Transfer 4000 $HAUS (~3% of total uncirculating supply) to Elected Reward Committee to distribute for Season `#`.
+- **Link**: https://app.hatsprotocol.xyz/trees/10/24?compact=true&hatId=24.3.2
+- **Safe Name**: Eco Fund
+- **Recipient**: `0x02Cd00B0Aec913c30577e4FCE3179aEd91D6C315`
+- **Requested ERC20**: 4000 HAUS
+
+4. Click Submit
+5. Vote Yes on Proposal
+
+Post in [`🏛-publichaus-chat`](https://discord.com/channels/709210493549674598/1087807904519827506)
+
+> Proposal to transfer 4000 $HAUS (~3% of total uncirculating supply) to Elected Reward Committee to distribute for Season `#`: https://admin.daohaus.club/#/molochV3/0xa/0xf5d6b637a9185707f52d40d452956ca49018247a/proposals
+
+6. Execute proposal after the Grace Period
