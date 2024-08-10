@@ -62,6 +62,10 @@ export default defineConfig({
               link: '/procedures/retro-rewards/create',
             },
             {
+              text: 'Add Shaman',
+              link: '/procedures/retro-rewards/shaman',
+            },
+            {
               text: 'Transfer',
               link: '/procedures/retro-rewards/transfer',
             },

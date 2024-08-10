@@ -1,0 +1,102 @@
+# Summon and Add Shaman
+
+Summon the shaman contract for the next season.
+
+## `MultiplyOnboarderShamanSummoner`
+
+1. Go to the [`MultiplyOnboarderShamanSummoner`](https://optimistic.etherscan.io/address/0x748b854efbeadad9a9ed3bea54413b3403b48053#writeContract) contract on the OP Mainnet Explorer.
+2. Click the Write Contract button
+
+![Write Contract](/images/write-contract.png)
+
+3. Fill in the following values:
+
+- **`_moloch (address)`**: `0xf5d6b637a9185707f52d40d452956ca49018247a`
+- **`_token (address)`**: `0x01B8b6384298D4848E3BE63D4C9D17830EeE488A`
+- **`_expiery (uint256)`**: 1726531200
+- **`_multiplier (uint256)`**: 10
+- **`_isShares (bool)`**: false
+- **`_details (string)`**: Season 6
+
+4. Click the Write button
+5. Click the View your transaction button
+
+### Transaction Details
+
+1. Goto the transaction details page
+2. Click the Logs(2) button
+3. Scroll down to the second Transaction Receipt Event Log
+4. Click the address after to `2: onboarder`
+
+![Onboarder](/images/onboarder.png)
+
+5. Copy that address
+6. Save the URL of this page for your Add Shaman proposal below
+
+## Update Shaman Address in Target DAO
+
+1. Goto [`targetDAO.tsx`](https://github.com/HausDAO/publichaus/blob/main/src/targetDAO.tsx#L29) on GitHub
+2. Click pencil icon to "Edit this file"
+3. Move the existing address to the comment
+4. Replace the `expiry` with the value used in the `MultiplyOnboarderShamanSummoner` above
+5. Change:
+
+```tsx
+SHAMAN_ADDRESS: "0xae487435dCF82C764526f7f8805518d8E8b27677", // expiry: 1718647200 //"0xe00240bd87934955c6b53565e072420e24e41f63",
+```
+
+to:
+
+```tsx
+SHAMAN_ADDRESS: "0x40118ac38965a4adfe92e72cced49a151f9f0406", // expiry: 1726531200 //"0xae487435dCF82C764526f7f8805518d8E8b27677",
+```
+
+7. Click commit changes
+8. Add Extended description: "Update shaman address"
+9. Select "Create a new branch for this commit and start a pull request"
+10. Name branch: `earth2travis-retro6` (your GitHub username dash next season number)
+11. Open a pull request
+12. Create pull request
+13. Merge pull request
+14. Delete branch
+
+## Add Shaman
+
+1. Go to the DAO and create new [Add Shaman](https://admin.daohaus.club/#/molochv3/0xa/0xf5d6b637a9185707f52d40d452956ca49018247a/new-proposal?formLego=ADD_SHAMAN) proposal
+2. Fill out the form
+
+- **Proposal Title**: Season `#` Staking Shaman
+- **Description**: Grant DAO permissions to shaman contract
+- **Link**: (URL from Transaction Details above)
+- **Shaman Address:** (same address you updated in Target DAO)
+- **Shaman Permission**: 2 - Manager only
+
+3. Click submit
+4. Vote on proposal
+
+## Notes on Values
+
+### `_expiery (uint256)`
+
+To calculate the `_expiery` you need the Unix epoch time.
+
+1. Use [dEth Tools](https://tools.deth.net/unix-epoch-utc-conversion) to get the date that is two weeks prior to when the next season ends.
+
+![convert-utc-to-unix](/images/convert-utc-to-unix-epoch.png)
+
+2. Copy the Unix epoch (in milliseconds):
+3. Edit the Unix epoch
+   - Since the epoch is in milliseconds you will need to remove 3 zeros from the end
+   - Change: `1726531200000`
+   - To: `1726531200`
+4. Paste your updated Unix epoch in dEth Tools to verify it is correct:
+
+![convert-unix](/images/convert-unix-epoch-to-utc.png)
+
+### `_isShares (bool)`
+
+This should be "false" in all lowercase letters.
+
+### `_details (string)`
+
+This is the number of the next season.
