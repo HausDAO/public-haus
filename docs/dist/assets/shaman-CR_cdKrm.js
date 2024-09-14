@@ -1,4 +1,4 @@
-import{u as r,j as e}from"./index-Dbs0CqSM.js";const l={title:"Summon and Add Shaman",description:"undefined"};function i(s){const n={a:"a",code:"code",div:"div",h1:"h1",h2:"h2",h3:"h3",header:"header",img:"img",li:"li",ol:"ol",p:"p",pre:"pre",span:"span",strong:"strong",ul:"ul",...r(),...s.components};return e.jsxs(e.Fragment,{children:[e.jsx(n.header,{children:e.jsxs(n.h1,{id:"summon-and-add-shaman",children:["Summon and Add Shaman",e.jsx(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#summon-and-add-shaman",children:e.jsx(n.div,{"data-autolink-icon":!0})})]})}),`
+import{u as r,j as e}from"./index-CZyyDon-.js";const l={title:"Summon and Add Shaman",description:"undefined"};function i(s){const n={a:"a",code:"code",div:"div",h1:"h1",h2:"h2",h3:"h3",header:"header",img:"img",li:"li",ol:"ol",p:"p",pre:"pre",span:"span",strong:"strong",ul:"ul",...r(),...s.components};return e.jsxs(e.Fragment,{children:[e.jsx(n.header,{children:e.jsxs(n.h1,{id:"summon-and-add-shaman",children:["Summon and Add Shaman",e.jsx(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#summon-and-add-shaman",children:e.jsx(n.div,{"data-autolink-icon":!0})})]})}),`
 `,e.jsx(n.p,{children:"Summon the shaman contract for the next season."}),`
 `,e.jsxs(n.h2,{id:"multiplyonboardershamansummoner",children:[e.jsx(n.code,{children:"MultiplyOnboarderShamanSummoner"}),e.jsx(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#multiplyonboardershamansummoner",children:e.jsx(n.div,{"data-autolink-icon":!0})})]}),`
 `,e.jsxs(n.ol,{children:[`
@@ -12,10 +12,10 @@ import{u as r,j as e}from"./index-Dbs0CqSM.js";const l={title:"Summon and Add Sh
 `,e.jsxs(n.ul,{children:[`
 `,e.jsxs(n.li,{children:[e.jsx(n.strong,{children:e.jsx(n.code,{children:"_moloch (address)"})}),": ",e.jsx(n.code,{children:"0xf5d6b637a9185707f52d40d452956ca49018247a"})]}),`
 `,e.jsxs(n.li,{children:[e.jsx(n.strong,{children:e.jsx(n.code,{children:"_token (address)"})}),": ",e.jsx(n.code,{children:"0x01B8b6384298D4848E3BE63D4C9D17830EeE488A"})]}),`
-`,e.jsxs(n.li,{children:[e.jsx(n.strong,{children:e.jsx(n.code,{children:"_expiery (uint256)"})}),": 1726531200"]}),`
+`,e.jsxs(n.li,{children:[e.jsx(n.strong,{children:e.jsx(n.code,{children:"_expiery (uint256)"})}),": 1726531200 (Set to 2 weeks before end of next season)"]}),`
 `,e.jsxs(n.li,{children:[e.jsx(n.strong,{children:e.jsx(n.code,{children:"_multiplier (uint256)"})}),": 10"]}),`
 `,e.jsxs(n.li,{children:[e.jsx(n.strong,{children:e.jsx(n.code,{children:"_isShares (bool)"})}),": false"]}),`
-`,e.jsxs(n.li,{children:[e.jsx(n.strong,{children:e.jsx(n.code,{children:"_details (string)"})}),": Season 6"]}),`
+`,e.jsxs(n.li,{children:[e.jsx(n.strong,{children:e.jsx(n.code,{children:"_details (string)"})}),": Season 6 (Update for next season)"]}),`
 `]}),`
 `,e.jsxs(n.ol,{start:"4",children:[`
 `,e.jsx(n.li,{children:"Click the Write button"}),`
